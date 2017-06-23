@@ -2,13 +2,18 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h3 class="h1">Alguns de meus trabalhos</h3>
+        <h3 class="h1">Alguns de meus trabalhos Como Designer/Front-End</h3>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <p>Importante: Os trabalhos abaixo foram desenvolvidos entre os periodos de <strong>2013 - 2016</strong>, em parceria com a agencia <a href="http://integramd.com.br/">Integra Marketing Digital</a>. Exceto do 2º. item: pela agencia <a href="https://conteudofreela.com.br/">Conteudo.Freela</a></p>
+          </div>
+        </div>
       </div>
 
       {% for image in site.static_files %}
         {% if image.path contains 'images/portfolio' %}
           {% unless image.path contains '-th.' %}
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 portfolio-item">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 portfolio-item">
                 <a href="{{ site.baseurl }}{{ image.path }}" data-lity data-lity-desc="Portfolio"><img src="{{ site.baseurl }}images/portfolio/{{ image.basename | append: '-th' | append: image.extname }}" class="img-responsive" alt="image"></a>
             </div>
           {% endunless %}
