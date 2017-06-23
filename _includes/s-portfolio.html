@@ -1,0 +1,20 @@
+<section id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h3 class="h1">Alguns de meus trabalhos</h3>
+      </div>
+
+      {% for image in site.static_files %}
+        {% if image.path contains 'images/portfolio' %}
+          {% unless image.path contains '-th.' %}
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 portfolio-item">
+                <a href="{{ site.baseurl }}{{ image.path }}" data-lity data-lity-desc="Portfolio"><img src="{{ site.baseurl }}images/portfolio/{{ image.basename | append: '-th' | append: image.extname }}" class="img-responsive" alt="image"></a>
+            </div>
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+
+    </div>
+  </div>
+</section>

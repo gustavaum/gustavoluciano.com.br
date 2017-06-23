@@ -1,6 +1,98 @@
-@import "reset";
-@import "syntax";
+//@import "reset";
+//@import "syntax";
+@import "/Users/gstv/Sites/gstv/bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "variables";
 
 body {
-    background: white;
+    font-family: $body-font;
+}
+
+a{
+  color: $azul;
+  &:hover{
+    color: $amarelo;
+  }
+}
+
+#site-hero{
+    .greatings{
+     font-style: italic;
+     font-size: 16px; 
+    }
+    height: 100vh;
+    min-height: 850px;
+
+    background:transparent url('../images/bg-hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+
+    .container{
+      position: relative;
+      padding-top: 60px;
+      height: 100%;
+    }
+    .bio-portrait{
+      position: absolute;
+      right: 0;
+      background: 50% url('../images/header-portrait.jpg') no-repeat;
+      background-size: cover;
+      width: 80%;
+      height: 80%;
+    }
+
+    .bio-text{
+      width: 50%;
+      height: 100%;
+      position: relative;
+      left: 0;
+      padding-top: 1em;
+      color: $azul-claro;
+
+      h1{
+        color: $amarelo;
+        margin-top: 10px;
+      }
+      h2{}
+
+      p{
+        max-width: 75%;
+        font-size: 16px
+      }
+      .sm{
+        a{
+          display: inline-block;
+          margin: 0.5em 0;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .bio-short-desc{
+      padding-bottom: 2em;
+    }
+}
+
+#portfolio{
+  padding: 3em 1em;
+  .portfolio-item{
+    padding: 2em;
+    a{
+      display: block;
+      overflow: hidden;
+      height: 200px;
+      border:5px solid $cinza-claro;
+      &:hover{
+        border-color: $azul;
+      }
+    }
+    img{
+
+    }
+  }
+}
+
+footer{
+  padding: 2em 0;
+  background-color: black;
+  color: $cinza;
 }
