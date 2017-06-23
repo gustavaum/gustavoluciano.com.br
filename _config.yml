@@ -1,4 +1,10 @@
-name: Your New Jekyll Site
+name: gustavoluciano.com.br
 markdown: redcarpet
 highlighter: pygments # or rouge or null
-exclude: ["node_modules", "gulpfile.js", "package.json", "bower.json", "vendor"]
+exclude: 
+  - "node_modules"
+  - "gulpfile.js"
+  - "package.json"
+  - "package-lock.json"
+  - "bower.json"
+  - "bower_components"
