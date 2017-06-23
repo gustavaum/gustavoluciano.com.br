@@ -5791,6 +5791,8 @@ a {
     #site-hero .bio-text h1 {
       color: #e9ac00;
       margin-top: 10px; }
+    #site-hero .bio-text h2 {
+      color: white; }
     #site-hero .bio-text p {
       max-width: 75%;
       font-size: 16px; }
