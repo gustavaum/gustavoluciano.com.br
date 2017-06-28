@@ -5752,6 +5752,24 @@ button.close {
 /*
  * Cores
  */
+/**
+ * Responsive mixin. The media breakpoints are as defined
+ * in the twitter bootstrap framework:
+ *
+ * - phone
+ * - tablet-portrait
+ * - tablet-landscape-desktop
+ * - large-desktop
+ *
+ * Additional parameters for tagetting retina and non-retina
+ * devices
+ *
+ * - retina
+ * - non-retina
+ *
+ * Moreover, a specific value in px can be passed which is
+ * used to generate a max-width media query.
+ */
 body {
   font-family: "Playfair Display", serif; }
 
@@ -5787,7 +5805,8 @@ a {
     position: relative;
     left: 0;
     padding-top: 1em;
-    color: #cedbe4; }
+    color: #cedbe4;
+    z-index: 100; }
     #site-hero .bio-text h1 {
       color: #e9ac00;
       margin-top: 10px; }
@@ -5809,11 +5828,37 @@ a {
     padding: 2em; }
     #portfolio .portfolio-item a {
       display: block;
+      position: relative;
       overflow: hidden;
-      height: 200px;
-      border: 5px solid #ccc; }
+      height: 25vh;
+      border: 5px solid #ccc;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      #portfolio .portfolio-item a .year {
+        position: absolute;
+        bottom: .5em;
+        left: 0;
+        display: inlin-block;
+        padding: .5em;
+        background-color: #ccc;
+        /*Top left */
+        -moz-border-top-left-radius: 0;
+        border-top-left-radius: 0;
+        /*Top right */
+        -moz-border-top-right-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        /*Bottom left */
+        -moz-border-bottom-left-radius: 0;
+        border-bottom-left-radius: 0;
+        /*Bottom right */
+        -moz-border-bottom-right-radius: 0.5em;
+        border-bottom-right-radius: 0.5em; }
       #portfolio .portfolio-item a:hover {
         border-color: #577b90; }
+        #portfolio .portfolio-item a:hover .year {
+          background-color: #577b90; }
+    #portfolio .portfolio-item img {
+      display: none; }
 
 footer {
   padding: 2em 0;
