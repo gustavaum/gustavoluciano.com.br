@@ -2,6 +2,7 @@
 //@import "syntax";
 @import "/Users/gstv/Sites/gstv/bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "variables";
+@import "class";
 
 body {
     font-family: $body-font;
@@ -40,14 +41,27 @@ a{
       width: 80%;
       height: 80%;
     }
-
+    
+    %bfr{
+      content: '';
+      display: block;
+      width: 80%;
+      height: 300px;
+      position: absolute;
+      top: -1em;
+      left: -2em;
+      border: 5px solid darken($cinza, 30%);
+      z-index: -1;
+    }
     .bio-text{
+            
       width: 50%;
       height: 100%;
       position: relative;
       left: 0;
       padding-top: 1em;
       color: $azul-claro;
+      z-index: 100;
 
       h1{
         color: $amarelo;
@@ -76,20 +90,42 @@ a{
 
 #portfolio{
   padding: 3em 1em;
+
   .portfolio-item{
     padding: 2em;
+    
     a{
       display: block;
+      position: relative;
       overflow: hidden;
-      height: 200px;
+      
+      height: 25vh;
+
       border:5px solid $cinza-claro;
+      
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .year{
+        position: absolute;
+        bottom: .5em;
+        left: 0;
+        display: inlin-block;
+        padding: .5em;
+        background-color: $cinza-claro;
+        @include round-corners(0, .5em, 0, .5em);
+
+      }
+
       &:hover{
         border-color: $azul;
+        .year{
+          background-color: $azul;
+        }
       }
-    }
-    img{
 
     }
+    img{display: none}
   }
 }
 

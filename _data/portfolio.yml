@@ -1,0 +1,65 @@
+-   legend: 'Parceria integra.md'
+    src:    'images/portfolio/01-latina-produto.jpg'
+    thumb:  'images/portfolio/01-latina-produto-th.jpg'
+    year:    '2016'
+
+-   legend: 'Parceria conteudo.freela'
+    src:    'images/portfolio/02-incetel.jpg'
+    thumb:  'images/portfolio/02-incetel-th.jpg'
+    year:    '2016'
+
+-   legend: 'Parceria integra.md'
+    src:    'images/portfolio/03-adopti.jpg'
+    thumb:  'images/portfolio/03-adopti-th.jpg'
+    year:    '2015'
+
+-   legend: 'Parceria integra.md'
+    src:    'images/portfolio/04-bicho-urbano.jpg'
+    thumb:  'images/portfolio/04-bicho-urbano-th.jpg'
+    year:    '2016'
+
+-   legend: 'Parceria integra.md'
+    src:    'images/portfolio/05-ceraltec.jpg'
+    thumb:  'images/portfolio/05-ceraltec-th.jpg'
+    year:    '2016'
+
+-   legend: 'Parceria integra.md'
+    src:    'images/portfolio/06-garden-kids.jpg'
+    thumb:  'images/portfolio/06-garden-kids-th.jpg'
+    year:    '2013'
+
+-   legend: 'Parceria integra.md'
+    src:    'images/portfolio/07-amor-e-flor.jpg'
+    thumb:  'images/portfolio/07-amor-e-flor-th.jpg'
+    year:    '2013'
+
+-   legend: 'Parceria integra.md'
+    src:    'images/portfolio/08-belle-parfum.jpg'
+    thumb:  'images/portfolio/08-belle-parfum-th.jpg'
+    year:    '2013'
+
+-   legend: 'Parceria integra.md'
+    thumb:  'images/portfolio/09-ballon-shoes.jpg'
+    src:    'images/portfolio/09-ballon-shoes-th.jpg'
+    year:    '2012'
+
+-   legend: 'Parceria integra.md'
+    src:    'images/portfolio/10-ceye.jpg'
+    thumb:  'images/portfolio/10-ceye-th.jpg'
+    year:    '2014'
+
+-   legend: 'Parceria integra.md'
+    src:    'images/portfolio/11-janon.jpg'
+    thumb:  'images/portfolio/11-janon-th.jpg'
+    year:    '2013'
+
+-   legend: 'Parceria integra.md'
+    src:    'images/portfolio/12-bibliarte.jpg'
+    thumb:  'images/portfolio/12-bibliarte-th.jpg'
+    year:    '2012'
+
+-   legend: 'Parceria integra.md'
+    src:    'images/portfolio/13-romaq.jpg'
+    thumb:  'images/portfolio/13-romaq-th.jpg'
+    year:    '2013'
+
