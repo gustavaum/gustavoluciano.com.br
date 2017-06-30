@@ -44,7 +44,7 @@
     </head>
     <body>
       <div id="global">
-        <header id="site-header">
+        <header id="site-header¡">
         
           <div id="site-hero" class="bio">
 
@@ -73,9 +73,9 @@
         <br>
         <a href="https://twitter.com/gustavaum">Twitter</a>
       </p>
-
+    
     </div><!-- .bio-text -->
-
+    
   </div>
 
 </div>
@@ -197,7 +197,7 @@
           <div class="container">
             <p>2017 - Gustavo Luciano - Feedback & Contato: <em>gustavoluciano414@gmail.com</em></p>
           </div>
-        </footer>
+        </footer>        
       </div>
       <script src="/vendor/jquery.min.js"></script>
       <script src="/vendor/lity.min.js"></script>       
@@ -210,6 +210,32 @@
 
           ga('create', 'UA-35204047-2', 'auto');
           ga('send', 'pageview');
+
+          $("a[href^='#']").on('click', function(e) {
+          // prevent default anchor click behavior
+          e.preventDefault();
+
+          // store hash
+          var hash = this.hash;
+
+          // animate
+          $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 300, function(){
+
+              // when done, add hash to url
+              // (default click behaviour)
+              window.location.hash = hash;
+            });
+        });
+
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 200) { //use `this`, not `document`
+            $('.fixedelement').css({
+              'display': 'none'
+            });
+          }
+        });
 
         </script>
     </body>
