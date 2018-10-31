@@ -5,8 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">                
         <link rel="stylesheet" href="/vendor/lity.min.css">
+
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
 
@@ -25,7 +27,7 @@
         <meta property="og:description" content="{{ page.description }}">
         <meta property="og:site_name" content="{{ page.title }}">
 
-        <script type='application/ld+json'> 
+        <script type='application/ld+json'> 2
         {
           "@context": "http://www.schema.org",
           "@type": "person",
@@ -39,16 +41,16 @@
         </script>
     </head>
     <body>
+
       <div id="global">
-        <header id="site-header">
-        
-          {% include s-hero.html %}
-    
+
+        <header class="site-header">        
+          {% include s-hero.html %}    
         </header>
 
         {{ content }}
 
-        <footer id="site-footer" class="text-center">
+        <footer class="site-footer">
           <div class="container">
             <p>{{ 'now' | date: "%Y" }} - Gustavo Luciano - Feedback & Contato: <em>gustavoluciano414@gmail.com</em></p>
           </div>
