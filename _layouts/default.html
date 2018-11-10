@@ -1,73 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
-        
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">                
-        <link rel="stylesheet" href="/vendor/lity.min.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+  <head>
+    {% include head.html %}
+  </head>
 
-        <meta name="description" content="{{ page.title }}" />
+  <body>
 
-        <!-- Schema.org markup for Google+ -->
-        <meta itemprop="name" content="{{ page.title }}">
-        <meta itemprop="description" content="{{ page.description }}">
-        <meta itemprop="image" content="/images/header-portrait.jpg">
+    <div id="root">
 
-        <!-- Open Graph data -->
-        <meta property="og:title" content="{{ page.title }}">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="http://www.gustavoluciano.com.br/">
-        <meta property="og:image" content="/images/header-portrait.jpg">
-        <meta property="og:description" content="{{ page.description }}">
-        <meta property="og:site_name" content="{{ page.title }}">
+      <header class="site-header">
+        {% include s-hero.html %}
+      </header>
 
-        <script type='application/ld+json'> 2
-        {
-          "@context": "http://www.schema.org",
-          "@type": "person",
-          "@id": "http://gustavoluciano.com.br",
-          "name": "Gustavo Luciano",
-          "jobTitle": "Ui Designer/Front-end",
-          "url": "http://gustavoluciano414@gmail.com",
-          "image": "http://gustavoluciano.com.br/images/header-portrait.jpg",
-          "email": "gustavoluciano414@gmail.com"
-        }
-        </script>
-    </head>
-    <body>
+      {{ content }}
 
-      <div id="global">
+      <footer class="site-footer">
+        <p>{{ 'now' | date: "%Y" }} - Feedback & Contato: <a href="mailto:gustavoluciano414@gmail.com">gustavoluciano414@gmail.com</a></p>
+      </footer>
 
-        <header class="site-header">        
-          {% include s-hero.html %}    
-        </header>
+    </div>
 
-        {{ content }}
+  </body>
 
-        <footer class="site-footer">
-          <div class="container">
-            <p>{{ 'now' | date: "%Y" }} - Gustavo Luciano - Feedback & Contato: <em>gustavoluciano414@gmail.com</em></p>
-          </div>
-        </footer>
-      </div>
-      <script src="/vendor/jquery.min.js"></script>
-      <script src="/vendor/lity.min.js"></script>       
-        
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-35204047-2', 'auto');
-          ga('send', 'pageview');
-
-        </script>
-    </body>
 </html>

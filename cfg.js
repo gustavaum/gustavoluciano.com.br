@@ -1,7 +1,26 @@
 const projectinfo = {
-    name: "gustavoluciano.com.br",
-    version: "2.0",
-    description: "Meu site pessoal"    
+    name: 'gustavoluciano.com.br',
+    version: '2.0',
+    description: 'Meu site pessoal',
+    persona: {
+        name: 'Gustavo',
+        lastname: 'Luciano',
+        fullname: 'Gustavo Marques Luciano',
+        birthdate: '1988-27-09',
+        experience: {
+            description: '10 anos de experiência com interfaces.',
+            tecnologias: ['html5', 'css3', 'sass' , 'js', 'npm', 'gulp', 'bootstrap', 'php', 'wordpress'],
+            skills: ['Conceitos de interface ', 'Semiótica', 'Interatividade e Cognição', 'Design centrado no Usuário', 'Usabilidade', 'Grids', 'Design Responsivo']
+        },
+        medias:{
+            facebook: '',
+            linkedin: '',
+            github: '',
+            twitter: '',
+            instagram: '',
+            steam: ''
+        }
+    }
 }
 
 /** PATHS */

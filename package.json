@@ -14,7 +14,7 @@
     "popper.js": "^1.14.4"
   },
   "devDependencies": {
-    "browser-sync-wsl": "^2.24.5-wsl",
+    "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "6.0.0",
     "gulp-clean-css": "^3.10.0",
@@ -26,6 +26,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-ssh": "^0.7.0",
     "gulp-uglify": "^3.0.1",
+    "material-design-lite": "^1.3.0",
     "node-sass": "^4.9.4"
   },
   "repository": {

@@ -1,7 +1,7 @@
-_site
 .idea
-node_modules
 .DS_Store
 .vscode
+_site/
+node_modules/
 bower_components/
-package-lock.json
+.jekyll-metadata
