@@ -1,0 +1,53 @@
+body{
+    background-color: $purple;    
+    font-family: Consolas, monaco, monospace;
+}
+.site-hero{
+    width: 100%;
+    min-width: 320px;
+    max-height: 100vh;    
+    background-color: red;
+    position: relative;
+    overflow: hidden;
+    @include p-el(before, 100%, 8em){
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+        @include linear-gradient( to bottom, transparent, $purple);
+    }
+    .site-about-me{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding-bottom: 2em;
+        padding-left: 2em;
+        color: white;
+        z-index: 1000;
+        h1{
+            position: relative;
+            font-family: $body-font;
+            @include p-el(after, 75%, 2px){
+                position: absolute;
+                bottom: 0;
+                left: -2em;
+                z-index: 999;
+                background-color: #fff;
+            }
+        }
+    }
+    img{
+        object-fit: cover;
+        min-height: 520px;
+    }
+}
+
+.site-footer{
+    padding: 10em 2em 2em 2em;
+    text-align: center;
+    color: lighten($purple, 20%);
+    
+    a{
+        color: $green;
+    }
+}

@@ -2,19 +2,21 @@
  * fonts
  */
 
-$body-font:  'Playfair Display', serif;
-$heading-font:  'Playfair Display', serif;
+$body-font:  'Viga', sans-serif;
+$heading-font:  'Viga', sans-serif;
 
 /*
  * Cores
  */
 
-
-
-
+//deprecated
 $amarelo:     #e9ac00;
 $azul:        #577b90;
 $azul-claro:  #cedbe4;
+
+//news
+$purple:      #412572;
+$green:       #22D19F;
 
 $amarelo-claro: lighten($amarelo, 30%);
 $amarelo-escuro: darken($amarelo, 20%);
@@ -23,3 +25,11 @@ $amarelo-escuro: darken($amarelo, 20%);
 $cinza: #666;
 $cinza-claro: #ccc;
 $cinza-escuro: #333;
+
+$lex-xs: 1em;
+$lex-s: 2em;
+$lex-m: 3em;
+$lex-l: 4em;
+$lex-xl: 5em;
+
+

@@ -1,6 +1,14 @@
-name: gustavoluciano.com.br
-markdown: redcarpet
-highlighter: pygments # or rouge or null
+title: gustavoluciano.com.br
+email: contato@gustavoluciano.com.br
+description: "Meu site pessoal"
+baseurl: ""
+url: http://gustavoluciano.com.br
+
+#Build settings
+highlighter: pygments 
+markdown: kramdown
+permalink: /:title
+
 exclude: 
   - "node_modules"
   - "gulpfile.js"
@@ -8,3 +16,4 @@ exclude:
   - "package-lock.json"
   - "bower.json"
   - "bower_components"
+  - "cfg.js"
